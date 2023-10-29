@@ -91,7 +91,7 @@ def whisper_transcribe(audio_file):
 def home():
     return "OK"
 
-@app.post('/whisper-transcribe/', status_code=200)
+@app.post('/whisper-transcribe/')
 async def whisper(file: UploadFile):
     # Read the uploaded audio into BytesIO
     audio_file = io.BytesIO(await file.read())
@@ -170,7 +170,7 @@ async def gladia(file: UploadFile):
     return transcript
 
 @app.post('/upload-audio-whisper/')
-async def transcribe_summarize_whisper(file: Annotated[UploadFile, File(description="An audio file to be transcribe")]):
+async def transcribe_summarize_whisper(file: UploadFile):
     
     audio_file = io.BytesIO(await file.read())
     audio_file.name = file.filename
@@ -184,7 +184,7 @@ async def transcribe_summarize_whisper(file: Annotated[UploadFile, File(descript
     }
 
 @app.post('/upload-audio-gladia/')
-async def transcribe_summarize_gladia(file: Annotated[UploadFile, File(description="An audio file to be transcribe")]):
+async def transcribe_summarize_gladia(file: UploadFile):
 
     audio_file = await file.read()
 
