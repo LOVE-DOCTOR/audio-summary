@@ -18,13 +18,15 @@ This is an Audio Summarizer API created for the purpose of audio content summari
 To get started with the Audio Summarization API, follow these steps:
 
 1. **Installation:** Clone this repository
-   'git clone https://github.com/username/repo.git'
+   ```python
+   git clone https://github.com/username/repo.git
 
-2. **Prerequisites:** Make sure you have the required dependencies installed
+3. **Prerequisites:** Make sure you have the required dependencies installed
    ```python
    pip install requirements.txt
 
 ## Usage
 
 1. **Use the API:** Run this command in your preferred terminal in the location of the main.py file
-   'python -m main'
+   ```python
+   python -m main
