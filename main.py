@@ -34,8 +34,8 @@ app.add_middleware(
 
 
 # API key
-openai.api_key = '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'
-gladia_key = '3132b10f-d352-4449-8178-e9da97fea908'
+openai.api_key = '<api key here>'
+gladia_key = '<api key here>'
 
 audio_object = Audio()
 
