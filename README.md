@@ -2,6 +2,8 @@
 
 This is an Audio Summarizer API created for the purpose of audio content summarization. It is useful for extracting key insights from podcasts, lectures, interviews, meetings, etc.
 
+This code was created for tutorial purposes. Follow the tutorial here: <coming soon>
+
 ## Table of Contents
 
 - [Features](#features)
